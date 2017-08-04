@@ -1,0 +1,24 @@
+.section-header{
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.bg-inverse{
+  .section-header{
+    color: $white;
+  }
+}
+
+.header-bordered::after{
+  content: ' ';
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: 3px;
+  background-color: $orange;
+  bottom: -16px;
+}
+.header-sub-text{
+  max-width: 800px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,22 @@
+/*
+Theme Name: Nihrom995 WP Theme
+Version: 1.0.0
+Author: Nihrom995
+Author URI: https://vk.com/nihrom995
+License: GNU General Public License v2 or later
+Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-logo, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Theme based on Unyson Framework
+*/
+
+@import "global/vars";
+@import "../vendors/bootstrap/scss/variables";
+@import "global/mixins";
+@import "global/base";
+@import "global/common";
+
+
+@import "sections/header";
+
+@import "sections/footer";
+

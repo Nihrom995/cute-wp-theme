@@ -1,0 +1,21 @@
+.footer{
+
+  &-block{
+    .title{
+      color:$white;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    textarea{
+      max-height: 120px;
+    }
+  }
+
+  .copyright{
+    background-color: #1c1c1c;
+    border-top: 1px solid #3d3d3d;
+    text-shadow: 0px 0px 1px #232323;
+    font-size: .9rem;
+  }
+}

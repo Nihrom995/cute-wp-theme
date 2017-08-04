@@ -1,0 +1,61 @@
+.header-menu-info .contact-info{
+  padding: 1.2rem;
+  display: inline-block;
+  border-left:1px solid #3d3d3d ;
+  border-right:1px solid #3d3d3d ;
+  font-size: .9rem;
+  color:#fff;
+  transition: .5s;
+  text-decoration: none;
+
+  & + .contact-info{
+    border-left: 0px;
+  }
+}
+.header-menu-info a.contact-info:hover{
+  background-color: lighten($inverse-bg, 12%);
+  text-decoration: none;
+}
+.navbar-light .navbar-nav .nav-link{
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-right: .9rem;
+  padding-left: .9rem;
+  transition: .5s;
+
+  &::after{
+    content: '';
+    position: relative;
+    display: block;
+    height: 3px;
+    width: 100%;
+    bottom:-6px;
+    background-color: rgba(255,182,0,1);
+    transition: .5s;
+    opacity: 0;
+  }
+
+}
+
+.navbar-light .navbar-nav .active .nav-link::after, .navbar-light .navbar-nav .nav-link:hover::after{
+  opacity: 1;
+}
+
+@media (max-width: 991px) {
+  .navbar{
+    padding: 0px !important;
+    position: sticky !important;
+    top: 0;
+  }
+  .navbar-light .navbar-toggler{
+    margin-top: 25px;
+  }
+  .navbar-light .navbar-toggler:focus, .navbar-light .navbar-toggler:hover {
+    color: #fff;
+    background: #ffb600;
+    border: 0px;
+    box-shadow: none;
+    outline: 0;
+
+  }
+}
