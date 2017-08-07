@@ -15,14 +15,13 @@ msgstr ""
 
 #: 404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Упс! Просим прощения, но страница не найдена."
+msgstr ""
 
 #: 404.php:21
 msgid ""
 "It looks like nothing was found at this location. Maybe try one of the "
 "links below or a search?"
-msgstr "Возможно вы ошиблись при вводе адреса, или страница был удалена. Но если вы ищите"
-"запчасти для спец техники, то вы попали куда нужно. Переходите на главную страницу и узнайте больше!"
+msgstr ""
 
 #: 404.php:30
 msgid "Most Used Categories"

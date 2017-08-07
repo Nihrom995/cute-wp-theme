@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package specmir
+ * @package nihrom995
  */
 
 get_header(); ?>

@@ -4,25 +4,22 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package specmir
+ * @package nihrom995
  */
 
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-    <div class="breadcrumb">
-        <div class="container">
-            <?php if( function_exists('fw_ext_breadcrumbs') ) { fw_ext_breadcrumbs(); } ?>
-        </div>
-    </div>
+	<header class="entry-header">
+		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'specmir' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'nihrom995' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -35,7 +32,7 @@
 					sprintf(
 						wp_kses(
 							/* translators: %s: Name of current post. Only visible to screen readers */
-							__( 'Edit <span class="screen-reader-text">%s</span>', 'specmir' ),
+							__( 'Edit <span class="screen-reader-text">%s</span>', 'nihrom995' ),
 							array(
 								'span' => array(
 									'class' => array(),
