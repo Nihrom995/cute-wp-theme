@@ -1,21 +1,28 @@
 .footer{
+  color: $footer-color;
+  background-color: $footer-bg;
+  font-size: 1.1rem;
 
-  &-block{
-    .title{
-      color:$white;
+  &-widget{
+    &-title{
       text-transform: uppercase;
-      margin-bottom: 20px;
-    }
-
-    textarea{
-      max-height: 120px;
+      font-size: 1.4rem;
+      font-weight: $footer-title-font-weight;
+      margin-bottom: 25px;
     }
   }
+}
+.copyright{
+  background-color: $copyright-bg;
+  color: $copyright-color;
 
-  .copyright{
-    background-color: #1c1c1c;
-    border-top: 1px solid #3d3d3d;
-    text-shadow: 0px 0px 1px #232323;
-    font-size: .9rem;
+  a{
+    color:$white;
+    text-decoration: underline;
+
+    &:hover,&:focus{
+      color:$white;
+      text-decoration: none;
+    }
   }
 }

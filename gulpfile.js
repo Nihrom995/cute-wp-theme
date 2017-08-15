@@ -61,7 +61,7 @@ gulp.task('clean', function del(cb) {
 /* ------------ Watchers ------------- */
 gulp.task('watch', function() {
     gulp.watch(['scss/**/*.scss'], gulp.series('styleScss:compile'));
-    gulp.watch(['vendors/bootstrap/scss/**/*.scss'], gulp.series('bootstrapScss:compile'));
+    gulp.watch(['scss/**/bootstrap-custom.scss'], gulp.series('bootstrapScss:compile'));
 });
 
 gulp.task('default', gulp.series(

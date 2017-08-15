@@ -1,0 +1,130 @@
+#primary.content-area{
+  background-color: $inverse-bg;
+}
+
+#main.site-main{
+  padding-bottom: 3rem;
+}
+
+#sidebar{
+  background-color: $body-bg;
+  border-radius: 0 0 6px 6px;
+
+
+  .widget{
+    margin-bottom: 1.5rem;
+  }
+}
+
+
+.block-shadow{
+  @include box-shadow();
+}
+
+.block-white{
+  background-color: $body-bg;
+}
+
+/*
+  Background
+*/
+.bg-primary{
+    color: $white;
+
+  .form-control{
+    background-color: rgba(255,255,255,.8);
+    max-width: 300px;
+    border-radius: 6px;
+    padding: 1rem 1rem;
+    border-bottom: 0px;
+    margin-bottom: 15px;
+
+    &:hover, &:focus{
+      border-bottom: 0px;
+    }
+  }
+}
+
+/*
+  breadcrumb
+*/
+.breadcrumb{
+  margin-bottom:0;
+  font-size: .9rem;
+
+
+  *{
+    font-size: .9rem;
+  }
+}
+
+/*
+  Post Styles
+*/
+.page{
+  .entry-header{
+    position: relative;
+
+  }
+
+
+  @media (max-width:425px) {
+    .entry-header{
+      position: relative;
+      .entry-title{
+        font-size: 1.7rem;
+      }
+    }
+  }
+}
+
+
+/*
+  Special Headers
+*/
+.block-heading{
+  .special-title{
+    margin-bottom: 1.8rem;
+  }
+}
+
+/*
+  Buttons
+*/
+.btn-primary:focus, .btn-primary.focus{
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  color: $white;
+}
+.btn-secondary:focus{
+  color:$black;
+  box-shadow: none;
+}
+
+
+/*
+  Map
+*/
+#map{
+
+  .row>.col, .row>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  p{
+    margin-bottom: -5px;
+  }
+
+  iframe{
+    border: 0px !important;
+    width: 100% !important;
+  }
+}
+
+/*
+Fancybox
+*/
+.fancybox-image{
+  border-radius: 6px;
+}
+

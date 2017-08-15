@@ -4,11 +4,14 @@
  * Copyright 2011-2017 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+//Bootstrap overrides
+@import "../../../scss/bootstrap-custom";
 
 // Core variables and mixins
 @import "variables";
 @import "mixins";
 @import "custom";
+
 
 // Reset and dependencies
 @import "normalize";

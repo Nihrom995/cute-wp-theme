@@ -7,11 +7,11 @@
  * @package nihrom995
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'sidebar-right' ) ) {
 	return;
 }
 ?>
 
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+<aside id="sidebar" class="widget-area block-shadow py-3 px-4">
+	<?php dynamic_sidebar( 'sidebar-right' ); ?>
 </aside><!-- #secondary -->

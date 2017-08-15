@@ -103,7 +103,7 @@ msgstr ""
 #: search.php:21
 #. translators: %s: search query.
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Результаты запроса для: %s"
 
 #: template-parts/content-none.php:14
 msgid "Nothing Found"

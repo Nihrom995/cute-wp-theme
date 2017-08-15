@@ -37,4 +37,8 @@ $options = array(
         'type'  => 'text',
         'label' => __('Ссылка кнопки', 'fw'),
     ),
+    'price' => array(
+        'type'  => 'text',
+        'label' => __('Цена от:', 'fw'),
+    ),
 );

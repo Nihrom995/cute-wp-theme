@@ -1,0 +1,28 @@
+.fw-tabs{
+  margin-bottom: 1rem;
+
+  .ui-tabs-nav{
+    display: flex;
+    justify-content: center;
+
+    .btn-primary{
+      background-color: $black;
+      margin: 0 .5rem;
+      text-transform: uppercase;
+      padding: .6rem 1.687rem;
+
+      &:hover, &:focus{
+        background-color: lighten($black, 10%);
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
+        color:$white;
+      }
+    }
+
+    .ui-tabs-active{
+      .btn-primary{
+        background-color: #e31e24;
+
+      }
+    }
+  }
+}

@@ -13,19 +13,30 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'nihrom995' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'nihrom995' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'nihrom995' ), 'nihrom995', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
-		</div><!-- .site-info -->
+	<footer class="footer py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
+                        <?php dynamic_sidebar( 'footer-1' ); ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col">
+                    <?php if ( is_active_sidebar( 'sidebar-footer-2' ) ) : ?>
+                        <?php dynamic_sidebar( 'sidebar-footer-2' ); ?>
+                    <?php endif; ?>
+                </div>
+                <div class="col">
+                    <?php if ( is_active_sidebar( 'footer-3' ) ) : ?>
+                        <?php dynamic_sidebar( 'footer-3' ); ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
 	</footer><!-- #colophon -->
+    <div class="copyright py-3">
+        <div class="text-center">Дизайн и разработка - <a href="//darkstudio.pro" target="_blank">Dark Studio</a></div>
+    </div>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

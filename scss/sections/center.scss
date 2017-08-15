@@ -1,0 +1,44 @@
+.school-center{
+
+  .fw-tabs{
+    .ui-tabs-nav{
+      flex-wrap: wrap;
+
+      .ui-state-default{
+        margin: 5px 0;
+      }
+    }
+
+  }
+
+  .fw-tab-content{
+    a{
+
+      display: block;
+      width: 250px;
+      height: 250px;
+      overflow: hidden;
+      box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.3);
+      margin: 10px auto;
+      border-radius: 6px;
+      position: relative;
+
+      &::after{
+        content: ' ';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0);
+        top:0;
+        left: 0;
+        transition: .5s;
+      }
+
+      &:hover::after{
+        background-color: rgba(0,0,0, .6);
+      }
+    }
+  }
+
+}
+

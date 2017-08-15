@@ -1,0 +1,28 @@
+.post{
+  .entry-title{
+    a{
+      color:$black;
+      font-size: 1.4rem;
+    }
+  }
+
+  .entry-content{
+    font-size: .9rem;
+
+    p{
+      margin-bottom: 0px;
+    }
+  }
+
+  .posted-on{
+    color: #aaaaaa;
+    font-size: .9rem;
+  }
+
+  .more-link{
+    display: block;
+    margin-top: 10px;
+    color: #aaaaaa;
+    font-size: 1rem;
+  }
+}

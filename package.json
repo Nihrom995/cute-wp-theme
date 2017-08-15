@@ -1,5 +1,5 @@
 {
-  "name": "specmir",
+  "name": "start-wp-theme",
   "version": "1.0.0",
   "description": "Template for Specmir",
   "main": "index.js",
@@ -25,5 +25,22 @@
     "fancybox": "^3.0.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nihrom995/cute-wp-theme.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Start",
+    "Theme",
+    "Unyson",
+    "Unyson",
+    "Framework",
+    "Nihrom995"
+  ],
+  "bugs": {
+    "url": "https://github.com/Nihrom995/cute-wp-theme/issues"
+  },
+  "homepage": "https://github.com/Nihrom995/cute-wp-theme#readme"
 }

@@ -9,7 +9,7 @@
 
 ?>
 
-<section class="no-results not-found">
+<section class="no-results not-found block-white block-shadow p-3 pb-4 mb-4">
 	<header class="page-header">
 		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'nihrom995' ); ?></h1>
 	</header><!-- .page-header -->
