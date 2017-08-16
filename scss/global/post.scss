@@ -1,4 +1,12 @@
 .post{
+
+
+  &-image{
+    img{
+      width: 100% !important;
+      height: auto;
+    }
+  }
   .entry-title{
     a{
       color:$black;

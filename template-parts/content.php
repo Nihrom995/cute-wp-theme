@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('block-white block-shadow card h-100'); ?>>
     <?php if(has_post_thumbnail()):?>
     <div class="post-image">
