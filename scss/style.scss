@@ -8,21 +8,20 @@ Description: Start WP Theme based on Unyson Framework. Extended Unyson shortcode
 
 Theme based on Unyson Framework
 */
-@import "bootstrap-custom";
+
 @import "global/vars";
 @import "global/mixins";
+@import "../node_modules/font-awesome/scss/font-awesome";
+@import "../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css";
+@import "../node_modules/bootstrap/scss/functions";
+@import "bootstrap-custom";
+
 @import "global/base";
 @import "global/common";
 @import "global/forms";
 @import "global/card";
-@import "global/tabs";
 @import "global/post";
 
 @import "sections/header";
-@import "sections/hero";
-@import "sections/categories";
-@import "sections/reviews";
-@import "sections/center";
-@import "sections/action";
 @import "sections/footer";
 

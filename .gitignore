@@ -1,7 +1,12 @@
 #Project
 node_modules
-build
-.idea/
+
+js/jquery.min.js
+js/bootstrap.min.js
+js/aos.js
+js/jquery.fancybox.min.js
+
+.idea
 
 # Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template

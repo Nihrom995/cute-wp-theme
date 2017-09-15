@@ -24,15 +24,16 @@ gulp.task('styleScss:compile', function () {
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError)) 
         .pipe(autoprefixer())
         //.pipe(rename("style.css"))
-        .pipe(gulp.dest('../nihrom995/'));
+        .pipe(gulp.dest('css'));
 });
 
+
 gulp.task('bootstrapScss:compile', function () {
-    return gulp.src('vendors/bootstrap/scss/bootstrap.scss')
+    return gulp.src('scss/bootstrap.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(rename("bootstrap.min.css"))
-        .pipe(gulp.dest('vendors/bootstrap/dist/css'));
+        .pipe(gulp.dest('css'));
 });
 
 /*---------------------- Sprites ------------------------*/
@@ -51,22 +52,27 @@ gulp.task('sprite', function (cb) {
     cb();
 });
 
-/*---------------------- Delete ------------------------*/
-gulp.task('clean', function del(cb) {
-    return rimraf('build', cb);
-});
+/* --------  js -------- */
+gulp.task('js', function() {
+    return gulp.src([
+        'node_modules/jquery/dist/jquery.min.js',
+        'node_modules/bootstrap/dist/js/bootstrap.min.js',
+        'node_modules/aos/dist/aos.js',
+        'node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js'
 
+    ]).pipe(gulp.dest('js'));
+});
 
 
 /* ------------ Watchers ------------- */
 gulp.task('watch', function() {
-    gulp.watch(['scss/**/*.scss'], gulp.series('styleScss:compile'));
-    gulp.watch(['scss/**/bootstrap-custom.scss'], gulp.series('bootstrapScss:compile'));
+    gulp.watch(['scss/**/*.scss', '!scss/**/bootstrap-custom.scss'], gulp.series('styleScss:compile'));
+    gulp.watch(['scss/**/bootstrap-custom.scss', 'scss/**/bootstrap.scss'], gulp.series('bootstrapScss:compile'));
 });
 
 gulp.task('default', gulp.series(
     //'clean',
-    gulp.parallel('styleScss:compile', 'bootstrapScss:compile'),
+    gulp.parallel('styleScss:compile', 'bootstrapScss:compile', 'js'),
     gulp.parallel('watch') //, 'server'
     )
 );

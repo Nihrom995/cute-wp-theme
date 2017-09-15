@@ -20,9 +20,9 @@
     "rimraf": "^2.6.1"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.1.20",
     "aos": "^2.1.1",
     "bootstrap": "^4.0.0-alpha.6",
-    "fancybox": "^3.0.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1"
   },

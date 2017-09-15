@@ -1,6 +1,6 @@
 <?php the_content(); ?>
 
-пше ы    <div class="container">
+<div class="container">
         <div class="block-heading fw-heading-h2  text-center">
             <h2 class="special-title ">Новости</h2>
             <div class="special-subtitle ">
@@ -9,8 +9,6 @@
         </div>
         <div class="row">
             <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
-
-
             <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
                 <div class="col-md-4 col-lg-4 py-2">
                     <div  class="block-primary post card  h-100">
@@ -42,7 +40,7 @@
             ?>
         </div>
     </div>
-</section>
+
 <section id="map" class="fw-main-row  ">
     <div class="container-fluid">
         <div class="row">
@@ -53,6 +51,5 @@
                 <script charset="utf-8" src="http://widgets.2gis.com/js/DGWidgetLoader.js"></script><script charset="utf-8">new DGWidgetLoader({"width":640,"height":400,"borderColor":"#a3a3a3","pos":{"lat":50.27029288914771,"lon":127.5302839279175,"zoom":16},"opt":{"city":"blagoveshensk"},"org":[{"id":"70000001025620493"}]});</script><noscript style="color: #c00; font-size: 16px; font-weight: bold;">Виджет карты использует JavaScript. Включите его в настройках вашего браузера.</noscript>
             </div>
         </div>
-
     </div>
 </section>
